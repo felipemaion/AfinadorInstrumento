@@ -65,7 +65,7 @@ export function Tuner() {
         </div>
       </main>
 
-      <footer className="z-10 flex flex-col items-center gap-4 pb-10">
+      <footer className="z-10 flex flex-col items-center gap-4 pb-6">
         <StringIndicator />
 
         {status !== 'running' && (
@@ -89,6 +89,18 @@ export function Tuner() {
             )}
           </div>
         )}
+
+        <div className="pt-2 text-[10px] uppercase tracking-[0.25em] text-white/30">
+          © {new Date().getFullYear()}{' '}
+          <a
+            href="https://github.com/felipemaion"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/50 transition hover:text-white"
+          >
+            Felipe Maion
+          </a>
+        </div>
       </footer>
     </div>
   )
